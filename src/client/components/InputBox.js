@@ -12,8 +12,8 @@ const style = {
   width: "200px"
 };
 
-const InputBox = ({ title, input, customStyle = {} }) => (
-  <div style={{ ...style, ...customStyle }}>
+const InputBox = ({ title, input }) => (
+  <div style={style}>
     {title}
     {input}
   </div>
@@ -22,7 +22,6 @@ const InputBox = ({ title, input, customStyle = {} }) => (
 InputBox.propTypes = {
   title: PropTypes.node.isRequired,
   input: PropTypes.node.isRequired,
-  customStyle: PropTypes.object
 };
 
 export default InputBox;
